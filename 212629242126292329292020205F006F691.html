@@ -1,0 +1,67 @@
+<html><head>
+	<script type="text/javascript" charset="utf-8">
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="https://lib.baomitu.com/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+
+</head>
+<body>
+	<div>
+	<form onsubmit="return checkPassword()" style="
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    margin-top: 5%;
+">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<div style="
+    position: relative;
+    text-align: center;
+"><input type="password" id="password" name="password" style="
+">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button></div>
+		
+	</form>
+	<div style="text-align: center;/* position: absolute; */bottom: 10%;left: 0%;right: 0%;">
+  <h5><a href="https://y.gtimg.cn/music/photo_new/T053XD001rLa0y3aBI5Z.png">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 43%;/* height: auto; */" src="https://y.gtimg.cn/music/photo_new/T053XD001Xjg9e4ATC4O.png" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br>点击右下角详情，观看广告后自动复制密码！</a></p>
+</div>
+    </div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "2323") { 
+				window.location.href = "http://p3-bcy.byteimg.com/obj/tos-cn-i-dcdx/o05LiIxhAoYqAIRE4BfyBuDzQtBvAgcMNdZFtH?G=kuais,Share&key=0768d8f18f0d2553902fc8bba752db5b3fe99ceb5827df6fe7ca06f1b854f53972059d18f70aee7bd10be6406ab6ffb434817e4b7fc15ca88f5c6ee1c7a9ec5b29c6912a8d045e6798e1113b5ae110a81971d16541fb7e8535515ed7cd8e42a15a983a4eb7546559dae1ecec860431b0ed5406964ffe20b60692391650f31aabdab924214e8c8d7ef83397ab1e66d34c5973091fa90f55524a24bc1e42cc832565d4bed8fbdbebfda19bf5f8a030a76738672d6c8ac2bff2f63081b1d4c00c7c1879fa9423d4f33ad053d71ca028eed5&8v20230908"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
